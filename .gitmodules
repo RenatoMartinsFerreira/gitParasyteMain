@@ -1,0 +1,6 @@
+[submodule "ParasyteMain/src/modules/ParasyteA"]
+	path = ParasyteMain/src/modules/ParasyteA
+	url = https://github.com/RenatoMartinsFerreira/ParasyteA.git
+[submodule "ParasyteMain/src/modules/ParasyteB"]
+	path = ParasyteMain/src/modules/ParasyteB
+	url = https://github.com/RenatoMartinsFerreira/ParasyteB.git
