@@ -6,6 +6,7 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
+    "syncSubmodules": "node scripts/syncSubmodules.js ",
     "test": "jest",
     "lint": "eslint ."
   },
@@ -35,14 +36,16 @@
   },
   "submodules": {
     "ParasyteA": {
-      "path": "src/modules/ParasyteA",
+      "name":"ParasyteA",
+      "path": "src/modules",
       "origin": "https://github.com/RenatoMartinsFerreira/ParasyteA.git",
-      "tag": "0.0.1"
+      "tag": "v0.0.1"
     },
     "ParasyteB": {
-      "path": "src/modules/ParasyteB",
+      "name":"ParasyteB",
+      "path": "src/modules",
       "origin": "https://github.com/RenatoMartinsFerreira/ParasyteB.git",
-      "tag": "0.0.1"
+      "tag": "v0.0.2"
     }
   }
 }
