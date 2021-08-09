@@ -12,6 +12,16 @@ export const installSubmodule = (element, index, array) => new Promise( (resolve
         },
       ); // the default is 'buffer'
       console.log('Output was:\n', output);
+      try {
+      const pull = execSync(
+        `cd ${formatedElement.path}/${formatedElement.name} && git pull`,
+        {
+          encoding: 'utf-8',
+        },
+      ); 
+    } catch (error) {
+      console.log('pull error', error);
+    }
       resolve(output)
     } catch (error) {
       console.log('error was:\n', error);
